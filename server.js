@@ -2,9 +2,9 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
-import auth from "./Routes/authroute.js";
-import task from "./Routes/task.js"
-import { authMiddleware } from "./Middleware/middleware.js"
+import auth from "./src/Routes/authroute.js";
+import task from "./src/Routes/task.js"
+import { authMiddleware } from "./src/Middleware/middleware.js"
 dotenv.config();
 
 const app = express();
