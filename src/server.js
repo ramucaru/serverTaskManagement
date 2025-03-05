@@ -18,7 +18,7 @@ app.use("/auth", auth);
 app.use("/task", task);
 
 mongoose.connect(connection, { dbName: "Task_Manager" }).then(() => {
-    app.listen(port, () => {
+    app.listen(port, '0.0.0.0', () => {
         console.log(`app is running ${port}`);
     })
 }).catch((error) => {
